@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "csm"
+version = "0.1.0"
+description = ""
+authors = ["Sesame AI Labs <sesame.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+torch = "2.4.0"
+torchaudio = "2.4.0"
+tokenizers = "0.21.0"
+transformers = "4.49.0"
+huggingface-hub = "0.28.1"
+moshi = "0.2.2"
+torchtune = "0.4.0"
+torchao = "0.9.0"
+silentcipher = {git = "https://github.com/SesameAILabs/silentcipher"}
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^9.0.2"
+ipywidgets = "^8.1.5"
+jupyterlab = "^4.3.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
